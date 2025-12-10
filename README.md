@@ -143,7 +143,7 @@ docker run --name mysql_clinic -e MYSQL_ROOT_PASSWORD=test123 -p 3306:3306 -d my
 # Open MySQL client
 mysql -u root -p
 
-# Enter password: Nilesh@143
+# Enter password: Ananth@143
 ```
 
 **Then execute in MySQL:**
@@ -246,7 +246,7 @@ SELECT COUNT(*) as slots_count FROM Time_Slots;
 
 ```powershell
 # Test MySQL connection
-mysql -u root -pNilesh@143 -h localhost -D super_clinic -e "SHOW TABLES;"
+mysql -u root -pAnanth@143 -h localhost -D super_clinic -e "SHOW TABLES;"
 ```
 
 ---
@@ -430,13 +430,13 @@ sqlalchemy.exc.ProgrammingError: (asyncmy.errors.ProgrammingError) 1045
 # Check MySQL is running
 # Verify credentials in Database.py:
 # - Username: root
-# - Password: Nilesh@143
+# - Password: Ananth@143
 # - Host: localhost
 # - Port: 3306
 # - Database: super_clinic
 
 # Test connection:
-mysql -u root -pNilesh@143 -h localhost -e "SELECT 1;"
+mysql -u root -pAnanth@143 -h localhost -e "SELECT 1;"
 ```
 
 ### Issue 3: OpenAI API Error
